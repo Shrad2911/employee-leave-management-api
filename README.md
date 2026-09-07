@@ -45,6 +45,9 @@ Create a `.env` file in the root directory of the project and add the following 
 ```env
 PORT=3000
 DATABASE_URL="postgresql://neondb_owner:YOUR_PASSWORD@ep-cool-sample-a5xyz.us-east-2.aws.neon.tech/neondb?sslmode=require"
+```
+---
+
 
 ## Database Setup
 
@@ -68,7 +71,11 @@ CREATE TABLE IF NOT EXISTS leaves (
     status VARCHAR(20) DEFAULT 'pending' CHECK (status IN ('pending', 'approved', 'rejected')),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-Local Setup & Installation
+
+```
+---
+
+## Local Setup & Installation
 Clone the Repository:
 
 Bash
@@ -91,7 +98,10 @@ For development (with live reload via Nodemon):
 
 Bash
 npm run dev
-API Documentation & Sample Requests
+
+---
+
+## API Documentation & Sample Requests
 1. Register Employee
 Endpoint: POST /employees
 
